@@ -1,0 +1,78 @@
+ERROR - 2023-01-29 14:51:35 --> mysqli_sql_exception: Column 'username' cannot be null in E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\XAMPP\htdocs\framework-master\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\XAMPP\htdocs\framework-master\app\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\XAMPP\htdocs\framework-master\app\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', Array)
+#6 E:\XAMPP\htdocs\framework-master\app\Controllers\Home.php(25): App\Models\CSRF->InsertData(Array, 'user_list')
+#7 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+#8 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\framework-master\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\XAMPP\htdocs\framework-master\system\Commands\Server\rewrite.php(47): require_once('E:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-29 14:51:35 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_list` (`UID`, `username`, `password`) VALUES (:UID:, :username:, :password:)', [...], false)
+ 2 APPPATH\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', [...])
+ 4 APPPATH\Controllers\Home.php(25): App\Models\CSRF->InsertData([...], 'user_list')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 14:52:21 --> mysqli_sql_exception: Column 'username' cannot be null in E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\XAMPP\htdocs\framework-master\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\XAMPP\htdocs\framework-master\app\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\XAMPP\htdocs\framework-master\app\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', Array)
+#6 E:\XAMPP\htdocs\framework-master\app\Controllers\Home.php(25): App\Models\CSRF->InsertData(Array, 'user_list')
+#7 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+#8 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\framework-master\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\XAMPP\htdocs\framework-master\system\Commands\Server\rewrite.php(47): require_once('E:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-29 14:52:21 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_list` (`UID`, `username`, `password`) VALUES (:UID:, :username:, :password:)', [...], false)
+ 2 APPPATH\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', [...])
+ 4 APPPATH\Controllers\Home.php(25): App\Models\CSRF->InsertData([...], 'user_list')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 14:52:25 --> mysqli_sql_exception: Column 'username' cannot be null in E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\XAMPP\htdocs\framework-master\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\XAMPP\htdocs\framework-master\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\XAMPP\htdocs\framework-master\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\XAMPP\htdocs\framework-master\app\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\XAMPP\htdocs\framework-master\app\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', Array)
+#6 E:\XAMPP\htdocs\framework-master\app\Controllers\Home.php(25): App\Models\CSRF->InsertData(Array, 'user_list')
+#7 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+#8 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\XAMPP\htdocs\framework-master\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\framework-master\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\XAMPP\htdocs\framework-master\system\Commands\Server\rewrite.php(47): require_once('E:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-29 14:52:25 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_list` (`UID`, `username`, `password`) VALUES (:UID:, :username:, :password:)', [...], false)
+ 2 APPPATH\Models\CrudModel.php(114): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Models\CSRF.php(12): App\Models\CrudModel->add('user_list', [...])
+ 4 APPPATH\Controllers\Home.php(25): App\Models\CSRF->InsertData([...], 'user_list')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->SubmitData()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
